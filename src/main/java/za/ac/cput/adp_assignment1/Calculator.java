@@ -10,5 +10,13 @@ package za.ac.cput.adp_assignment1;
  * @author Manasseh Barnes 218009615
  */
 public class Calculator {
-    
+    public int add(int num1, int num2) {
+        int result = num1 + num2;
+        return result;
+    }
+   
+    public int subtract(int num1, int num2) {
+        int result = num1 - num2;
+        return result;
+    }
 }
