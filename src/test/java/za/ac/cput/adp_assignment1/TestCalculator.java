@@ -7,9 +7,9 @@ package za.ac.cput.adp_assignment1;
 
 import java.util.concurrent.TimeUnit;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
+//import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
+//import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Disabled;
@@ -49,20 +49,16 @@ public class TestCalculator {
         assertFalse(false);
     }
     
-    @Timeout(value = 100, unit = TimeUnit.MILLISECONDS)
     @Test
+    @Timeout(value = 200, unit = TimeUnit.MILLISECONDS)
     public void TimeoutTest() {
-        
+        //fails if Execution times exceeds 200 milliseconds
     }
                      
-    @Disabled("This Test will not run")
     @Test
+    @Disabled("This Test will not run")
     public void Fail() {
-        
+        // This test will be skipped
     }
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    
 }
