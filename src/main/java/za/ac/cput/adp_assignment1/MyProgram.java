@@ -7,7 +7,7 @@ package za.ac.cput.adp_assignment1;
 
 /**
  *
- * @author GravanAnthony_217177204
+ * @author GravanAshleyAnthony_217177204
  */
 
 public class MyProgram 
