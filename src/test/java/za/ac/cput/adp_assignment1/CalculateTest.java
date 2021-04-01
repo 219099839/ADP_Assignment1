@@ -20,10 +20,10 @@ import org.junit.jupiter.api.Timeout;
  * @author maryg
  */
 public class CalculateTest {
-    private Calculate x;
-    private Calculate y;
-    private Calculate a;
-    
+   public Calculate x;
+   public Calculate y;
+   public Calculate z;
+  
     public CalculateTest() {
     }
     
@@ -37,46 +37,55 @@ public class CalculateTest {
     
     @BeforeEach
     public void setUp() {
-        this.x=new Calculate();
-        this.y=new Calculate();
-        a=x;
+     x=new Calculate();
+     x.setNum1(3);
+     x.setNum2(5);
+     
+     y=new Calculate();
+     y.setNum1(3);
+     y.setNum2(5);
+     
+     z=y;
+         
+     
+      
+      
     }
     
     @AfterEach
     public void tearDown() {
     }
-    
     //object equality
-    @Test 
+    @Test
     public void testEquality(){
-        assertEquals(x,y);}
-
+        assertEquals(x.getNum1(),y.getNum2());
+    }
     //object identity
     @Test
     public void testIdentity(){
-        assertEquals(y,a);
+        assertSame(x,z);
     }
-    
-    //Failing test
+    //Fail
     @Test
-    public void failingTest(){
-        assertSame(x,y);
-    }
+    public void testFail(){
+    fail("Failure");
+    assertEquals(x.getNum1(),y.getNum2());
     
+    }
     //Timeout
     @Test
-    @Timeout(value=100, unit = TimeUnit.MILLISECONDS)
-    public void testTimeout(){
-        for(int i=0; i<=10;i++){
-            System.out.println("Please Work");
-        }
+    @Timeout(value=300, unit=TimeUnit.MILLISECONDS)
+    public void TimeoutTest(){
     }
+
     
-    @Disabled("Don't Run")
+    //Disable
     @Test
-    public void testDis(){
-        System.out.println("dont");
+    @Disabled("Disabling")
+    public void testDisable(){
+        System.out.println("Will not run");
     }
-    
 }
+    
+
 
