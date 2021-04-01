@@ -59,4 +59,8 @@ public class CalculateTest {
     public void testDisable(){
         System.out.println("Will not run");
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 01b93562c2ab081472e493889f51391509ba9a24

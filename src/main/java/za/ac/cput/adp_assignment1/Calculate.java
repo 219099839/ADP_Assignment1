@@ -32,4 +32,8 @@ public class Calculate {
     public String toString() {
         return "Calculate{" + "num1=" + num1 + ", num2=" + num2 + '}';
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 01b93562c2ab081472e493889f51391509ba9a24
