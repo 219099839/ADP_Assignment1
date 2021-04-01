@@ -7,7 +7,7 @@ package za.ac.cput.adp_assignment1;
 
 /**
  *
- * @author Manasseh Barnes 218009615
+ * @author Manasseh Barnes 218009615 TL
  */
 public class Calculator {
     public int add(int num1, int num2) {

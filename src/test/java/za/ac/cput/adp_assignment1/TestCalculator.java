@@ -17,7 +17,7 @@ import org.junit.jupiter.api.Timeout;
 
 /**
  *
- * @author Manasseh Barnes 218009615
+ * @author Manasseh Barnes 218009615 TL
  */
 public class TestCalculator {
     
