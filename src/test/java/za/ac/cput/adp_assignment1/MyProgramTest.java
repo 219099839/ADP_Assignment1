@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author antho
+ * @author GravanAnthony_217177204
  */
 public class MyProgramTest {
     
