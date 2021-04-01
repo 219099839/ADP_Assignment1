@@ -40,7 +40,7 @@ public class MyProgramTest {
     /**
      * Test of getName method, of class MyProgram.
      */
-    @org.junit.Test
+    @Test
     public void testGetName() {
         System.out.println("getName");
         MyProgram instance = new MyProgram();
@@ -54,7 +54,7 @@ public class MyProgramTest {
     /**
      * Test of getSurname method, of class MyProgram.
      */
-    @org.junit.Test
+    @Test
     public void testGetSurname() {
         System.out.println("getSurname");
         MyProgram instance = new MyProgram();
@@ -68,7 +68,7 @@ public class MyProgramTest {
     /**
      * Test of getAge method, of class MyProgram.
      */
-    @org.junit.Test
+    @Test
     public void testGetAge() {
         System.out.println("getAge");
         MyProgram instance = new MyProgram();
@@ -82,7 +82,7 @@ public class MyProgramTest {
     /**
      * Test of getBirthYear method, of class MyProgram.
      */
-    @org.junit.Test
+    @Test
     public void testGetBirthYear() {
         System.out.println("getBirthYear");
         MyProgram instance = new MyProgram();
@@ -96,7 +96,7 @@ public class MyProgramTest {
     /**
      * Test of setName method, of class MyProgram.
      */
-    @org.junit.Test
+    @Test
     public void testSetName() {
         System.out.println("setName");
         String name = "";
@@ -109,7 +109,7 @@ public class MyProgramTest {
     /**
      * Test of setSurname method, of class MyProgram.
      */
-    @org.junit.Test
+    @Test
     public void testSetSurname() {
         System.out.println("setSurname");
         String surname = "";
@@ -122,7 +122,7 @@ public class MyProgramTest {
     /**
      * Test of setAge method, of class MyProgram.
      */
-    @org.junit.Test
+    @Test
     public void testSetAge() {
         System.out.println("setAge");
         int age = 0;
@@ -135,13 +135,25 @@ public class MyProgramTest {
     /**
      * Test of setBirthYear method, of class MyProgram.
      */
-    @org.junit.Test
+    @Test
     public void testSetBirthYear() {
         System.out.println("setBirthYear");
         MyProgram instance = new MyProgram();
         instance.setBirthYear();
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
+    }
+
+    private void fail(String the_test_case_is_a_prototype) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void assertEquals(int expResult, int result) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void assertEquals(String expResult, String result) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
