@@ -20,65 +20,39 @@ import org.junit.jupiter.api.Timeout;
  * @author maryg
  */
 public class CalculateTest {
-   public Calculate x;
-   public Calculate y;
-   public Calculate z;
+   public Calculate num1;
+   public Calculate num2;
   
-    public CalculateTest() {
-    }
-    
-    @BeforeAll
-    public static void setUpClass() {
-    }
-    
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
     @BeforeEach
     public void setUp() {
-     x=new Calculate();
-     x.setNum1(3);
-     x.setNum2(5);
-     
-     y=new Calculate();
-     y.setNum1(3);
-     y.setNum2(5);
-     
-     z=y;
-         
-     
-      
-      
-    }
-    
-    @AfterEach
-    public void tearDown() {
+        num1=new Calculate();
+        num2=new Calculate();
+        num1=num2;
     }
     //object equality
     @Test
     public void testEquality(){
-        assertEquals(x.getNum1(),y.getNum2());
+        assertEquals(num1,num2);
     }
     //object identity
     @Test
     public void testIdentity(){
-        assertSame(x,z);
+        assertSame(num1,num2);
     }
     //Fail
     @Test
+   
     public void testFail(){
     fail("Failure");
-    assertEquals(x.getNum1(),y.getNum2());
+    assertEquals(num1,num2);
     
     }
-    //Timeout
+    //timout
     @Test
-    @Timeout(value=300, unit=TimeUnit.MILLISECONDS)
-    public void TimeoutTest(){
+     @Timeout(value=300, unit=TimeUnit.MILLISECONDS)
+    public void TestTimeout(){
+        
     }
-
-    
     //Disable
     @Test
     @Disabled("Disabling")
@@ -86,6 +60,3 @@ public class CalculateTest {
         System.out.println("Will not run");
     }
 }
-    
-
-
